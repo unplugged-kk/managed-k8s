@@ -3,5 +3,3 @@ GKE/.DS_Store
 GKE/regional-cluster/.DS_Store
 *.DS_Store*
 *.DS_Store
-
-# Added comment to check github action #
