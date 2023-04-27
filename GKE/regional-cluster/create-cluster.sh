@@ -5,7 +5,7 @@ set -x
 echo -n "Enter Sandbox Project ID "
 read PROJECT_ID
 
-CLUSTER_NAME="kishore-public-cluster-1"
+CLUSTER_NAME="kishore-public-cluster-2"
 CLUSTER_VERSION="1.25.7-gke.1000"
 MACHINE_TYPE="e2-small"
 DISK_SIZE="20"
