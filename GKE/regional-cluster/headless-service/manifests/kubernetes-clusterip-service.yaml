@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service 
+metadata:
+  name: kkapp1-cip-service
+spec:
+  type: ClusterIP 
+  selector:
+    app: kkapp1
+  ports: 
+    - name: http
+      port: 80 
+      targetPort: 8080 
+      

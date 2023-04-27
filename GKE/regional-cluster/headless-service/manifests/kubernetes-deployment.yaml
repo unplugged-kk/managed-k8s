@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: kkapp1-deployment
+spec: 
+  replicas: 4
+  selector:
+    matchLabels:
+      app: kkapp1
+  template:  
+    metadata: 
+      name: kkapp1-pod
+      labels: 
+        app: kkapp1  
+    spec:
+      containers: # List
+        - name: kkapp1-container
+          image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
+          ports: 
+            - containerPort: 8080  
+    
