@@ -49,7 +49,7 @@ gcloud compute networks subnets create "$VPC_NAME-subnet-3" --project="$PROJECT_
 # Create firewall rules to allow internal traffic and SSH access
 gcloud compute firewall-rules create allow-internal --network="$VPC_NAME" --allow=ALL --source-ranges="$IP_RANGE"
 gcloud compute firewall-rules create allow-ssh --network="$VPC_NAME" --allow=tcp:22 --source-ranges="$IP_RANGE"
-
+gcloud compute firewall-rules create allow-https --network="$VPC_NAME" --allow=tcp:443 --source-ranges="$IP_RANGE"
 
 # Enable Private Google Access for the subnets
 gcloud compute networks subnets update "$VPC_NAME-subnet-1" --project="$PROJECT_ID" --region=us-central1 --enable-private-ip-google-access

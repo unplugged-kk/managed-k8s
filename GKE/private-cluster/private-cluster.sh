@@ -9,9 +9,9 @@ echo -n "Enter custom VPC name (leave empty for default): "
 read CUSTOM_VPC
 
 # Set the cluster name, version, machine type, disk size, number of nodes, and region
-CLUSTER_NAME="kishore-k8-private-cluster"
+CLUSTER_NAME="kishore-k8s-private-cluster"
 CLUSTER_VERSION="1.25.7-gke.1000"
-MACHINE_TYPE="e2-small"
+MACHINE_TYPE="e2-medium"
 DISK_SIZE="20"
 NUM_NODES="1"
 GKE_REGION="us-central1"
