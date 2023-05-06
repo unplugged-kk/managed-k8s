@@ -28,7 +28,5 @@ volumeBindingMode: WaitForFirstConsumer
 # 1. A StorageClass provides a way for administrators 
 # to describe the "classes" of storage they offer.
 # 2. Here we are offering GCP PD Storage for GKE Cluster
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
+
 
